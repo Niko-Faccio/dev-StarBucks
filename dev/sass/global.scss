@@ -13,6 +13,7 @@ html {
     font-size: $font-size;
     background-color: $bg-color;
     color: $text;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -57,11 +58,35 @@ h6 {
     font-size: 1.25rem;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 .container {
     max-width: 1274px;
     padding: 0 12px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btn {
+    &.btn-outline {
+        width: 84px;
+        height: 84px;
+        border: 1px solid $primary-color;
+        border-radius: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            height: 37px;
+        }
+    }
+}
+
+.svg-sprite {
+    height: 0;
 }
 
 ::selection {
