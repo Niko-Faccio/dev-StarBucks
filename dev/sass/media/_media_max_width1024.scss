@@ -45,6 +45,66 @@
         gap: 48px;
         flex-direction: column;
     }
+
+    .btn {
+        &.btn-outline {
+            width: 52px;
+            height: 52px;
+            border-radius: 18px;
+            svg {
+                height: 22px;
+            }
+        }
+    }
+
+    .footer {
+        padding: 37px 0 7px;
+        &__logo {
+            max-width: 135px;
+        }
+        &-nav {
+            order: 1;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 28px;
+            padding: 38px 0 32px;
+        }
+    
+        &-row {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            .btn {
+                margin-left: auto;
+            }
+        }
+
+        .footer-nav__title,
+        .footer-nav__link{
+            font-size: 15px;
+        }
+
+        .footer-nav__column {
+            padding: 0;
+        }
+
+        .footer-phones__item {
+            font-size: 16px;
+        }
+
+        .footer-social__item {
+            width: 34px;
+            height: 34px;
+        }
+
+        .btn {
+            margin-top: -17px;
+        }
+    }
+
+    
+
+   
 }
 
 

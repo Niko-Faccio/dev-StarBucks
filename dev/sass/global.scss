@@ -63,6 +63,12 @@ img {
     max-width: 100%;
 }
 
+a {
+    &:hover {
+        color: $secondary-color
+    }
+}
+
 .container {
     max-width: 1274px;
     padding: 0 12px;
