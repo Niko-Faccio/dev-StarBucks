@@ -1,18 +1,12 @@
 .banner {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        right: -682px;
-        bottom: -239px;
-        width: 1470px;
-        height: 668px;
-        background: url(./assets/img/decoration__banner-line.svg) center no-repeat;
-    }
+   
+    
     .container {
         display: flex;
         gap: 24px;
+        align-items: flex-start;
         justify-content: space-between;
     }
     &-content {
@@ -22,6 +16,13 @@
     h1 {
         font-weight: 800;
         margin-bottom: 54px;
+        position: relative;
+        &::before {
+            @include template-light;
+            width: 586px;
+            height: 653px;
+            background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
+        }
     }
 
     &-description {
@@ -35,6 +36,15 @@
         display: flex;
         gap: 16px;
         margin-bottom: 54px;
+        position: relative;
+        &::before {
+            @include template-light;
+            width: 603px;
+            height: 603px;
+            left: 73%;
+            top: 100%;
+            background: url(./assets/img/decoration__banner-light-btn-row.png) center no-repeat;
+        }
     }
 
     &-statistic__title {
@@ -57,6 +67,27 @@
     .banner-img {
         margin-right: 43px;
         position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 130px;
+            bottom: 225px;
+            width: 479px;
+            height: 479px;
+            background: url(./assets/img/decoration__banner-light-img.png) center no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -170px;
+            bottom: -170px;
+            width: 676px;
+            height: 676px;
+            background: url(./assets/img/decoration__banner-light-img-md.png) center no-repeat;
+            z-index: -1;
+        }
     }
 
     .banner-discount {
@@ -88,3 +119,14 @@
     }
 }
 
+
+
+
+//&::after {
+//    @include template-light;
+//    width: 479px;
+//    height: 479px;
+//    left: 22%;
+//    top: 27%;
+//    background: url(./assets/img/decoration__banner-light-img.png) center no-repeat;
+//}
