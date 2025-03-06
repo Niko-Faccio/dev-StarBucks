@@ -1,3 +1,19 @@
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575.99px) {
+    .banner-img::after {
+        display: none;
+    }
+
+    .banner .banner-discount {
+        right: 110px;
+    }
+    
+    .banner .banner-line {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 96px;
+        right: -70px;
+        z-index: -1;
+    }
     
 }
