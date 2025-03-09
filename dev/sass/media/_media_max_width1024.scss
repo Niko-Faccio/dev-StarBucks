@@ -102,10 +102,6 @@
             margin-right: initial;
         }
 
-        .banner-discount {
-            right: 168px;
-        }
-
         .banner-img::before {
             display: none;
         }
@@ -124,6 +120,74 @@
         z-index: -1;
         }
     }
+
+    .accent-label {
+        right: 168px;
+    }
+
+
+    .advantages-row {
+        padding: 20px 38px;
+        border-radius: 27px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+        max-width: 218px;
+        margin: 0 auto;
+
+        &::after {
+            right: -60%;
+            bottom: -28%;
+        }
+
+        &::before {
+            left: 0;
+            top: -30%;
+        }
+
+        .advantage__title {
+            font-size: 18px;
+        }
+
+        .advantage__description {
+            font-size: 12px;
+            line-height: 1.63;
+        }
+
+        .accent-label-sm {
+            left: 73%;
+            top: -4%;
+            width: 88px;
+            height: 88px;
+            --size: 8.6vw;
+            width: var(--size);
+            height: var(--size);
+            //min-width: 88px;
+            //min-height: 88px;
+            font-size: 18px;
+        }
+
+        .advantage__img-box {
+            img {
+                max-width: 122px;
+                max-height: 122px;
+            }
+        }
+
+        .advantage__img-box {
+            position: relative;
+            --size: 86px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+            margin-bottom: 12px;
+        }
+    }
+    
+    
 
     .footer {
         padding: 37px 0 7px;

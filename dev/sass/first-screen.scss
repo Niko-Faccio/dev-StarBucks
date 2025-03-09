@@ -69,6 +69,21 @@
     .banner-img {
         margin-right: 43px;
         position: relative;
+
+        .accent-label {
+            --max-size: 166px;
+            --size: 12.769vw;
+            width: var(--size);
+            height: var(--size);
+            max-width: var(--max-size);
+            max-height: var(--max-size);
+            top: 0;
+            right: 38px;
+            font-size: Min(4.231vw, 55px);
+            font-weight: 500;
+            transform: rotate(-15deg);
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -92,63 +107,7 @@
         }
     }
 
-    .banner-discount {
-        --max-size: 166px;
-        --size: 12.769vw;
-        width: var(--size);
-        height: var(--size);
-        max-width: var(--max-size);
-        max-height: var(--max-size);
-        background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: absolute;
-        top: 0;
-        right: 38px;
-        color: $title-color;
-        font-size: Min(4.231vw, 55px);
-        font-weight: 500;
-        z-index: 1;
-        transform: rotate(-15deg);
-
-        &-image {
-            width: var(--size);
-            height: var(--size);
-            max-width: var(--max-size);
-            max-height: var(--max-size);
-            background: url(./assets/img/bg-discount.svg) center / 100% no-repeat;
-            position: absolute;
-            z-index: -1;
-        }
-        
-        &-shadow {
-            position: absolute;
-            width: calc(100% - 42px);
-            height: calc(100% - 42px);
-            box-shadow: -4.56px 15.52px 26.48px 18px rgba(20, 62, 40, 0.4784313725);
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: -2;
-        }
-        
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: calc(100% - 42px);
-            height: calc(100% - 42px);
-            box-shadow: -4.56px 15.52px 26.48px 18px #143E287a;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: -1;
-        }
-    }
+    
 
     .banner-line {
         width: 1472px;
@@ -163,11 +122,3 @@
 
 
 
-//&::after {
-//    @include template-light;
-//    width: 479px;
-//    height: 479px;
-//    left: 22%;
-//    top: 27%;
-//    background: url(./assets/img/decoration__banner-light-img.png) center no-repeat;
-//}
