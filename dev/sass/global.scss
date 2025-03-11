@@ -265,17 +265,17 @@ a {
 
 .accent-label-sm {
     @extend .accent-label;
-    --max-size: 154px;
-    --size: 12.185vw;
-    width: var(--size);
-    height: var(--size);
-    max-width: var(--max-size);
-    max-height: var(--max-size);
+    width: 133px;
+    height: 133px;
     top: -50px;
     left: -50px;
     font-size: 32px;
     font-weight: 500;
     
+    .accent-label-image {
+        width: 133px;
+        height: 133px;
+    }
 }
 
 .white-wrapper {
