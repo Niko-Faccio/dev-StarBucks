@@ -1,5 +1,4 @@
 .banner {
-    padding-bottom: 100px;
     position: relative;
    
     
@@ -10,14 +9,12 @@
         justify-content: space-between;
     }
     &-content {
-        max-width: 574px;
+        max-width: 580px;
     }
 
-    h1 {
-        font-size: min(6vw, 80px);
-        font-weight: 800;
+    .template-title {
         margin-bottom: 54px;
-        position: relative;
+
         &::before {
             @include template-light;
             width: 586px;
@@ -26,12 +23,6 @@
         }
     }
 
-    &-description {
-        @extend h6;
-        color: $text;
-        font-weight: 400;
-        margin-bottom: 54px;
-    }
 
     &-btn-group {
         display: flex;
@@ -107,8 +98,6 @@
         }
     }
 
-    
-
     .banner-line {
         width: 1472px;
         height: 670px;
@@ -116,6 +105,10 @@
         top: 196px;
         right: -857px;
         z-index: -1;
+    }
+
+    .template-description {
+        max-width: 580px;
     }
 }
 
