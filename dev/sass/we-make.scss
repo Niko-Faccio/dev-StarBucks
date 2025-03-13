@@ -27,6 +27,28 @@
             background-color: $primary-color;
         }
 
+        &::after {
+            content: "";
+            position: absolute;
+            right: -42%;
+            top: -10%;
+            width: 581px;
+            height: 537px;
+            background: url(./assets/img/decoration__we-make-img-box-light.png) center no-repeat;
+            z-index: -1;
+        }
+
+       //&::before {
+       //    content: "";
+       //    position: absolute;
+       //    left: 0%;
+       //    top: 0%;
+       //    width: 579px;
+       //    height: 537px;
+       //    background: url(./assets/img/decoration__we-make-img-box-accent.png) center no-repeat;
+       //    z-index: -1;
+       //}
+
         .accent-label-sm {
             top: 0;
             left: 66%;
@@ -44,6 +66,28 @@
     &__content-box {
         max-width: 470px;
         width: 100%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: -15%;
+            top: -30%;
+            width: 600px;
+            height: 557px;
+            background: url(./assets/img/decoration__we-make-content-box-accent.png) center no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 14%;
+            top: 50%;
+            width: 516px;
+            height: 479px;
+            background: url(./assets/img/decoration__we-make-content-box-light.png) center no-repeat;
+            z-index: -1;
+        }
     }
 }
 
