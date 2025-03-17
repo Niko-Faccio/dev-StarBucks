@@ -71,6 +71,7 @@ h6 {
 .template-title {
     font-size: min(6vw, 80px);
     font-weight: 800;
+    letter-spacing: -0.03em;
 }
 
 .template-description {
@@ -79,6 +80,7 @@ h6 {
     font-weight: 400;
     margin-bottom: 54px;
     max-width: 480px;
+    letter-spacing: -0.02em;
 }
 
 img {
@@ -92,6 +94,10 @@ a {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     color: $title-color;
     font-size: 24px;
@@ -99,7 +105,7 @@ a {
     border: none;
     text-decoration: none;
     background: transparent;
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
     transition: .3s;
     position: relative;
@@ -123,6 +129,12 @@ a {
             transform: skew(-25deg, 0);
             right: calc(100% + 10px)
         }
+    }
+
+    svg {
+        --size: 28px;
+        height: var(--size);
+        width: var(--size);
     }
 
     &.btn-primary {
@@ -305,6 +317,10 @@ a {
     p {
         color: #282A2C;
     }
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 

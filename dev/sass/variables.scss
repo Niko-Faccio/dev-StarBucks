@@ -26,9 +26,16 @@ $section-mobile-mb: 64px;
 
 
 
-@mixin clip-right {
-    -webkit-mask: url(./assets/img/we-make__clip-right.svg);
-    -o-mask: url(./assets/img/we-make__clip-right.svg);
-    -moz-mask: url(./assets/img/we-make__clip-right.svg);
-    mask: url(./assets/img/we-make__clip-right.svg);
+@mixin clip-right-top {
+    -webkit-mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
+    -moz-mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
+    mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
+}
+
+@mixin clip-right-bottom {
+    -webkit-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
+    -moz-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
+    mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
 }

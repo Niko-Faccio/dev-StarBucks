@@ -15,12 +15,7 @@
     .template-title {
         margin-bottom: 54px;
 
-        &::before {
-            @include template-light;
-            width: 586px;
-            height: 653px;
-            background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
-        }
+      
     }
 
 
@@ -30,6 +25,7 @@
         gap: 16px;
         margin-bottom: 54px;
         position: relative;
+
         &::before {
             @include template-light;
             width: 603px;
@@ -37,6 +33,15 @@
             left: 73%;
             top: 100%;
             background: url(./assets/img/decoration__banner-light-btn-row.png) center no-repeat;
+        }
+
+        &::after {
+            @include template-light;
+            left: 40%;
+            top: -200%;
+            width: 586px;
+            height: 653px;
+            background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
         }
     }
 

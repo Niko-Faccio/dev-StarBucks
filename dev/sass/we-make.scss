@@ -12,17 +12,17 @@
         max-width: 465px;
 
         img {
-            @include clip-right;
+            @include clip-right-top;
         }
 
         &::before {
             content: "";
             position: absolute;
-            @include clip-right;
+            @include clip-right-top;
             top: 36px;
             right: 49px;
-            width: calc(100% - 3px);
-            height: calc(100% - 3px);
+            width: 100%;
+            height: 100%;
             z-index: -1;
             background-color: $primary-color;
         }
@@ -30,24 +30,27 @@
         &::after {
             content: "";
             position: absolute;
-            right: -42%;
-            top: -10%;
+            right: -26%;
+            top: -16%;
             width: 581px;
             height: 537px;
             background: url(./assets/img/decoration__we-make-img-box-light.png) center no-repeat;
             z-index: -1;
         }
 
-       //&::before {
-       //    content: "";
-       //    position: absolute;
-       //    left: 0%;
-       //    top: 0%;
-       //    width: 579px;
-       //    height: 537px;
-       //    background: url(./assets/img/decoration__we-make-img-box-accent.png) center no-repeat;
-       //    z-index: -1;
-       //}
+    .we-make__img-box-light {
+
+            &::before {
+               content: "";
+               position: absolute;
+               left: -55%;
+               top: 55%;
+               width: 579px;
+               height: 537px;
+               background: url(./assets/img/decoration__we-make-img-box-accent.png) center no-repeat;
+               z-index: -1;
+        }   
+    }
 
         .accent-label-sm {
             top: 0;
@@ -64,14 +67,14 @@
     }
 
     &__content-box {
-        max-width: 470px;
+        max-width: 447px;
         width: 100%;
 
         &::before {
             content: "";
             position: absolute;
-            right: -15%;
-            top: -30%;
+            right: -16%;
+            top: -24%;
             width: 600px;
             height: 557px;
             background: url(./assets/img/decoration__we-make-content-box-accent.png) center no-repeat;
@@ -81,23 +84,46 @@
         &::after {
             content: "";
             position: absolute;
-            right: 14%;
-            top: 50%;
+            right: 12%;
+            top: 52%;
             width: 516px;
             height: 479px;
-            background: url(./assets/img/decoration__we-make-content-box-light.png) center no-repeat;
+            background: url(./assets/img/decoration__we-make-content-box-light.png) center / cover no-repeat;
             z-index: -1;
         }
     }
 }
 
+.we-make__process {
+    position: relative;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    img {
+        max-height: 275px;
+        filter: blur(2px);
+        box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39); //not work!!!
+        @include clip-right-bottom;
+    }
+
+    .btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: max-content;
+    }
+}
 
 .we-make__line {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 1002px; 
-    height: 624px;
-    display: none;
+    right: -30%;
+    bottom: -70%;
+    width: 1238px; 
+    z-index: -1;
+    
 }
-

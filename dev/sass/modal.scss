@@ -1,0 +1,65 @@
+.overlay {
+    background-color: #00000085;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    height: 0;
+    width: 0;transition: .1s;
+
+    &.show {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%);
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: $primary-color;
+    font-size: 24px;
+    font-weight: 500;
+    visibility: hidden;
+    transition: .2s;
+    opacity: 0;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: end;
+  }
+
+.modal-content {
+    margin: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+  
+.close:hover,
+.close:focus {
+    color: #121517;
+    text-decoration: none;
+    cursor: pointer;
+  }
