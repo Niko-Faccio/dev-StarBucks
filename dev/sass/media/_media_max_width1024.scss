@@ -34,17 +34,26 @@
         top: 0;
         width: 100%;
         background: #0B0C0Dd1;
-        padding: 25px 25px 75px;
+        padding: 25px;
         background-image: linear-gradient(245deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.32) 51.85%);
         backdrop-filter: blur(10px);
         transition: .3s;
         visibility: hidden;
         transform: translate(0, -100%);
+        flex-direction: column;
+        gap: 32px;
+
         &.show {
-            top: 97px;
+            top: 68px;
             transform: translate(0, 0);
             visibility: visible;
             z-index: 3;
+        }
+
+        .btn.btn-secondary {
+            margin-left: initial;
+            font-size: 20px;
+            padding: 10px;
         }
     }
     .menu__list {

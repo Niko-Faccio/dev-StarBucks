@@ -7,31 +7,43 @@ burger.addEventListener('click', ()=> {
 
 /* modal */
 
-const btnTrigerProcess = document.querySelector('[data-triger-modal="process"]');
+const modalTrigers = document.querySelectorAll('[data-triger-modal]');
+const modalClose = document.querySelectorAll('[data-modal-close]')
 const overlay = document.querySelector('.overlay')
 const body = document.querySelector('body')
-const modal = document.querySelector('.modal')
-const btnModalClose = document.querySelector('[data-modal="close"]')
 
-console.log(modal);
-
-function showModal(event) {
-    overlay.classList.add('show')
-    modal.classList.add('show')
+function showModal() {
     body.classList.add('overflow-hidden')
-    event.preventDefault()
+    overlay.classList.add('show')
 }
 
-function closeModal(event) {
-    overlay.classList.remove('show')
-    modal.classList.remove('show')
+function closeModal() {
+    const openModal = document.querySelector('.modal.show')
     body.classList.remove('overflow-hidden')
-    event.preventDefault()
+    overlay.classList.remove('show')
+    openModal.classList.remove('show')
 }
 
+modalTrigers.forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault()
 
-btnTrigerProcess.addEventListener('click', showModal);
-btnModalClose.addEventListener('click', closeModal);
+        const dataTriger = item.getAttribute('data-triger-modal')
+        const modal = document.querySelector('#' + dataTriger + ".modal")
+
+        showModal()
+        modal.classList.add('show')
+    })
+})
+
+modalClose.forEach(close => {
+    close.addEventListener('click', closeModal)
+})
+
+
+//
+//btnTrigerProcess.addEventListener('click', showModal);
+//btnModalClose.addEventListener('click', closeModal);
 
 
 

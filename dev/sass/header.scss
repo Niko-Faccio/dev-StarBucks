@@ -2,9 +2,10 @@ header {
     padding: 48px 0;
     position: relative;
     >.container {
+        --gap: 94px;
         display: flex;
         align-items: center;
-        gap: 94px;
+        gap: var(--gap);
     }
     .btn-burger {
         margin-left: auto;
@@ -13,10 +14,23 @@ header {
 .header-logo {
     z-index: 1;
 }
+
+.mobile-container {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+    .btn {
+        margin-left: auto;
+        font-size: 20px;
+        padding: 16px;
+    }
+}
+
 .menu {
     &__list {
         display: flex;
-        gap: 94px;
+        gap: var(--gap);
     }
     
     &__link {

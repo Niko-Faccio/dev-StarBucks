@@ -8,6 +8,7 @@
     z-index: 5;
     height: 0;
     width: 0;transition: .1s;
+    cursor: pointer;
 
     &.show {
         height: 100vh;
@@ -21,7 +22,7 @@
     left: 50%;
     z-index: 10;
     transform: translate(-50%);
-    border: 1px solid;
+    border: 4px solid;
     border-radius: 15px;
     padding: 10px;
     background-color: $primary-color;
@@ -35,6 +36,11 @@
         visibility: visible;
         opacity: 1;
     }
+
+    .btn-secondary {
+        padding: 12px 32px;
+        font-size: 20px;
+    }
 }
 
 .modal-header {
@@ -44,6 +50,7 @@
 
 .modal-content {
     margin: 20px;
+    padding: 40px 20px;
 }
 
 /* The Close Button */
