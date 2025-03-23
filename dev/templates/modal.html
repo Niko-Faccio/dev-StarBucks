@@ -1,13 +1,36 @@
-<div id="process" class="modal">
+<div id="process" class="modal video-process">
     <div class="modal-header">
         <span class="close" data-modal-close>&times;</span>
     </div>
    <div class="modal-body">
-        <div class="modal-content">
-            <iframe width="720" height="405" src="https://www.youtube.com/embed/Z7e8tmcSrxg" title="Barista Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="modal-content">  
+            <video src="./assets/img/cappuccino.mp4" id="video" poster="./assets/img/poster-capuccino.jpg" controls>Sorry, your browser doesn't support embedded videos, but don't worry, you can
+                <a href="./assets/img/cappuccino.mp4">download it</a>
+                and watch it with your favorite video player!</video>
         </div>
    </div>
-    <button class="btn btn-secondary" data-modal-close type="button">Close</button>
+    <div class="modal-footer">
+        <div class="modal-footer__btn-nav">
+            <button id="play" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-triangle"></use>
+                </svg>
+            </button>
+            <button id="pause" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-pause"></use>
+                </svg>
+            </button>
+            <button id="stop" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-stop"></use>
+                </svg>
+            </button>
+            <button id="preparation" class="btn btn-modal-nav">preparation</button>
+            <button id="cooking" class="btn btn-modal-nav">cooking</button>
+            <button id="enjoyment" class="btn btn-modal-nav">enjoyment</button>
+        </div>
+    </div>
 </div>
 
 <div id="feedback" class="modal">

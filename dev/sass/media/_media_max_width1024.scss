@@ -72,18 +72,65 @@
         }
     }
 
-    .btn.btn-primary,
+    .btn.btn-primary, 
     .btn.btn-secondary {
-            font-size: 16px;
-            padding: 17px 24px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .we-make {
+        display: flex;
+
+        .container {
+            flex-direction: column;
+            margin-bottom: 64px;
         }
+
+        &__img-box {
+            max-width: 164px;
+            margin-left: 30%;
+            margin-bottom: 60px;
+
+            &::before {
+                top: 12px;
+                right: 15px;
+            }
+        }
+        .we-make__line {
+            right: -70%;
+            width: 208%;
+            bottom: 40%;
+            z-index: -2;
+        }
+
+        .accent-label-sm {
+            top: 30%;
+            left: 150%;
+            width: 78px;
+            height: 78px;
+            font-size: 18px;
+            font-weight: 500;
+            .accent-label-image {
+                width: 78px;
+                height: 78px;
+            }
+        }
+
+        &__content-box {
+            max-width: 320px;
+            width: 100%;
+        }
+    }
+
 
     .template-title {
             font-size: min(12vw, 48px);
+            margin-bottom: 36px;
         }
     
     .template-description {
             font-size: 12px;
+            margin-bottom: 38px;
         }
 
     .banner {
@@ -202,7 +249,28 @@
         }
     }
     
+    .modal {
+        max-width: 360px;
+    }
     
+    .modal-content {
+        margin: 8px;
+        padding: 22px 6px;
+        font-size: 12px;
+    }
+
+    .modal-footer {
+        .btn-modal-nav {
+            padding: 4px;
+            font-size: 12px;
+        }
+    }
+
+    .close {
+        font-size: 22px;
+        padding: 0 4px;
+        border-radius: 2px;
+    }
 
     .footer {
         padding: 37px 0 7px;
