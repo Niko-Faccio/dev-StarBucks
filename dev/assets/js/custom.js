@@ -113,19 +113,29 @@ modalClose.forEach(close => {
 })
 
 
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 48,
+    slidesPerView: 4,
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 
 
-
-const x = 3
-
-if (x < 7) {
-    console.log ('malo')
-}
-else  if (x ==7) {
-    console.log ('7')
-} 
-else {
-    console.log ('viac')
-}
+//const x = 3
+//
+//if (x < 7) {
+//    console.log ('malo')
+//}
+//else  if (x ==7) {
+//    console.log ('7')
+//} 
+//else {
+//    console.log ('viac')
+//}
 

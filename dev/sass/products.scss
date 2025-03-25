@@ -1,0 +1,14 @@
+.products-title-wrapper {
+    display: flex;
+    align-items: center;
+
+    .template-title {
+        max-width: 390px;
+        margin-right: 72px;
+        margin-bottom: 0;
+    }
+
+    .template-description {
+        margin-bottom: 0;
+    }
+}
