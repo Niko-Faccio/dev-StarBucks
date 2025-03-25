@@ -37,6 +37,8 @@
     &.show {
         visibility: visible;
         opacity: 1;
+        max-width: 640px;
+        line-height: 1.2em;
     }
 
     .btn-secondary {
@@ -54,6 +56,12 @@
     padding: 10px;
     video {
         width: 100%;
+    }
+}
+
+.modal-body {
+    .modal-content {
+        padding: 10px;
     }
 }
 
@@ -84,11 +92,11 @@
 .close {
     color: #fff;
     float: right;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 3px 10px;
     background-color: #ff0000;
-    border-radius: 5px;
+    border-radius: 3px;
 }
   
 .close:hover,

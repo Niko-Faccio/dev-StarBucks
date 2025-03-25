@@ -250,14 +250,19 @@
     }
     
     .modal {
-        max-width: 360px;
+        &.show {
+            max-width: 360px;
+            line-height: initial;
+            border: 1px solid;
+        }
+        .modal-content {
+            padding: 6px;
+            font-size: 12px;
+            line-height: inherit;
+        }
     }
     
-    .modal-content {
-        margin: 8px;
-        padding: 22px 6px;
-        font-size: 12px;
-    }
+    
 
     .modal-footer {
         .btn-modal-nav {
@@ -268,7 +273,7 @@
 
     .close {
         font-size: 22px;
-        padding: 0 4px;
+        padding: 0 6px;
         border-radius: 2px;
     }
 
