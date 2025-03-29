@@ -14,6 +14,16 @@ $bg-color: #121517;
 $section-mb: 100px;
 $section-mobile-mb: 64px;
 
+
+
+@mixin transform-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 @mixin template-light {
     content: "";
     position: absolute;
@@ -23,7 +33,6 @@ $section-mobile-mb: 64px;
     z-index: -1;
     background: center/contain no-repeat;
 }
-
 
 
 @mixin clip-right-top {

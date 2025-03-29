@@ -13,4 +13,13 @@
         bottom: -64vw;
     }
     
+    .carousel-wrapper {
+        .swiper {
+            max-width: 184px;
+        }
+    }
+    
+    .swiper-navigation {
+        max-width: 324px;
+    }
 }

@@ -12,5 +12,13 @@
         }
     }
 
-   
+    .carousel-wrapper {
+        .swiper {
+            max-width: 402px;
+        }
+    }
+    
+    .swiper-navigation {
+        max-width: 544px;
+    }
 }

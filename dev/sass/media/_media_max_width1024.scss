@@ -261,7 +261,74 @@
             line-height: inherit;
         }
     }
+
+    .carousel-wrapper {
+        .swiper {
+            max-width: 402px;
+        }
+    }
     
+    .swiper-navigation {
+        max-width: 544px;
+    }
+
+
+    .products-title-wrapper {
+        flex-direction: column;
+        margin-bottom: 42px;
+
+        .template-title {
+            max-width: 320px;
+            margin: 0 0 36px;
+        }
+
+        .template-description {
+            max-width: 320px;
+        }
+    }
+    
+    .product {
+        border-radius: 19px;
+        padding: 38px 20px 20px;
+        width: 183px;
+    
+        &-img {
+            --size: 120px;
+            margin-bottom: 20px;
+    
+            img {
+                height: 160px;
+            }
+        }
+    
+        &-title {
+            font-size: 21px;
+            margin-bottom: 2px;
+        }
+    
+        &-description {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+    
+        &-value {
+            gap: 23px;
+            margin-bottom: 20px;
+        }
+    
+        &-price {
+            font-size: 21px;
+        }
+
+        &-volume {
+            font-size: 13px;
+        }
+    
+        .btn {
+            font-size: 11px;
+            padding: 9px 25px;
+        } 
+    }
     
 
     .modal-footer {

@@ -114,8 +114,8 @@ modalClose.forEach(close => {
 
 
 const swiper = new Swiper('.swiper', {
-    spaceBetween: 48,
-    slidesPerView: 4,
+    spaceBetween: 36,
+    slidesPerView: 1,
     loop: true,
   
     // Navigation arrows
@@ -123,6 +123,24 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          },
+        1233: {
+          slidesPerView: 3,
+          spaceBetween: 48,
+        },
+        1560: {
+          slidesPerView: 4,
+          spaceBetween: 48,
+        }
+      }
   });
 
 
