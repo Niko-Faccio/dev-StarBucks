@@ -1,3 +1,53 @@
+.events {
+    .container {
+        position: relative;
+
+        .template-description::after {
+            content: "";
+            position: absolute;
+            left: 246px;
+            top: 294px;
+            width: 322px;
+            height: 277px;
+            background: url(./assets/img/decoration__events-light.png) center no-repeat;
+            z-index: -1;
+           }
+    
+        .template-description::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 588px;
+            width: 322px;
+            height: 277px;
+            background: url(./assets/img/decoration__events-light.png) center no-repeat;
+            z-index: -1;
+           }
+    
+        .events-decoration-accent::after {
+            content: "";
+            position: absolute;
+            left: -88px;
+            top: 374px;
+            width: 275px;
+            height: 220px;
+            background: url(./assets/img/decoration__events-accent.png) center no-repeat;
+            z-index: -1;
+           }
+    
+        .events-decoration-accent::before {
+            content: "";
+            position: absolute;
+            right: -100px;
+            top: 428px;
+            width: 275px;
+            height: 220px;
+            background: url(./assets/img/decoration__events-accent.png) center no-repeat;
+            z-index: -1;
+           }
+    }
+}
+
 .events-title-wrapper {
     @extend .products-title-wrapper;
     flex-direction: row-reverse;
@@ -5,11 +55,22 @@
     .template-title {
         margin-right: 0;
         margin-left: var(--margin);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -300px;
+            top: 120px;
+            width: 275px;
+            height: 220px;
+            background: url(./assets/img/decoration__events-accent.png) center no-repeat;
+            z-index: -1;
+        }
     }
 }
 
+
 .events-grid {
-    
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -37,7 +98,7 @@
     
     .event-1 { 
         grid-area: 1 / 1 / 4 / 7; 
-        position: relative;
+        
     }
 
     .event-2 { 
@@ -61,11 +122,11 @@
             max-width: 300px;
         }
     }
-
+       
 .events-line {
     position: absolute;
-    top: 3032px;
-    right: 1043px;
-    width: 698px;
+    top: 0;
+    left: -340px;
+    width: 700px;
     z-index: -1;
     }

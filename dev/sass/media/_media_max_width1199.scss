@@ -11,6 +11,7 @@
 }
 
 
+
 @media screen and (max-width: 1199.99px) {
    
     .accent-label-sm {
@@ -20,8 +21,17 @@
     .we-make__line {
         bottom: -60%;
     }
+
+    .events-line {
+        top: 16px;
+        width: 600px;
+        left: -274px;
+    }
+    
     
     .footer-nav {
         max-width: 650px;
     }
 }
+
+

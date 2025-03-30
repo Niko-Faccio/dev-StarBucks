@@ -12,14 +12,76 @@
     margin-bottom: 56px;
 
     .template-title {
+        position: relative;
         --margin: 72px;
         max-width: 390px;
         margin-right: var(--margin);
         margin-bottom: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: -110px;
+            width: 581px;
+            height: 537px;
+            background: url(./assets/img/decoration__products-accent-md.png) center no-repeat;
+            z-index: -1;
+           }
     }
 
     .template-description {
+        position: relative;
         margin-bottom: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -572px;
+            top: 277px;
+            width: 516px;
+            height: 479px;
+            background: url(./assets/img/decoration__products-light.png) center no-repeat;
+            z-index: -1;
+           }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            left: -240px;
+            top: 150px;
+            width: 516px;
+            height: 479px;
+            background: url(./assets/img/decoration__products-light.png) center no-repeat;
+            z-index: -1;
+           }
+    }
+
+    .products-decoration-accent {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 116px;
+            top: 238px;
+            width: 332px;
+            height: 372px;
+            background: url(./assets/img/decoration__products-accent-sm.png) center no-repeat;
+            z-index: -1;
+           }
+
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: -414px;
+            top: 100px;
+            width: 537px;
+            height: 778px;
+            background: url(./assets/img/decoration__products-accent-xl.png) center no-repeat;
+            z-index: -1;
+           }
     }
 }
 
