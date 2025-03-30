@@ -9,6 +9,7 @@
 }
 
 .events-grid {
+    
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -36,6 +37,7 @@
     
     .event-1 { 
         grid-area: 1 / 1 / 4 / 7; 
+        position: relative;
     }
 
     .event-2 { 
@@ -58,4 +60,12 @@
         .event-title {
             max-width: 300px;
         }
+    }
+
+.events-line {
+    position: absolute;
+    top: 3032px;
+    right: 1043px;
+    width: 698px;
+    z-index: -1;
     }
