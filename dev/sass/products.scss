@@ -12,8 +12,9 @@
     margin-bottom: 56px;
 
     .template-title {
+        --margin: 72px;
         max-width: 390px;
-        margin-right: 72px;
+        margin-right: var(--margin);
         margin-bottom: 0;
     }
 
