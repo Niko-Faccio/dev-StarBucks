@@ -113,7 +113,9 @@ modalClose.forEach(close => {
 })
 
 
-const swiper = new Swiper('.swiper', {
+//  Slider SWIPER
+
+const swiperProduct = new Swiper('.swiper', {
     spaceBetween: 36,
     slidesPerView: 1,
     loop: true,
