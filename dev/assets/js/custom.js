@@ -113,9 +113,9 @@ modalClose.forEach(close => {
 })
 
 
-//  Slider SWIPER
+//  Slider SWIPER PRODUCTS
 
-const swiperProduct = new Swiper('.swiper', {
+const swiperProduct = new Swiper('.swiper-product', {
     spaceBetween: 36,
     slidesPerView: 1,
     loop: true,
@@ -144,6 +144,65 @@ const swiperProduct = new Swiper('.swiper', {
         }
       }
   });
+
+
+  //Slider SWIPER EVENTS  MOBILE ONLY
+
+  
+
+  let swiperEvents;
+  const swiperEventsMediaQuery = window.matchMedia ("(max-width: 1025px")
+
+  function checkedBreakpoint(swiperEventsMediaQuery) {
+    if (swiperEventsMediaQuery.matches) {
+        swiperEvents = new Swiper('.swiper-events', {
+            spaceBetween: 36,
+            slidesPerView: 1,
+            loop: true,
+
+            navigation: {
+              nextEl: '.swiper-events-button-next',
+              prevEl: '.swiper-events-button-prev',
+            },
+          });
+
+          return;
+       
+    } else {
+        swiperEvents.destroy();
+    }
+  }
+
+  checkedBreakpoint(swiperEventsMediaQuery);
+
+  swiperEventsMediaQuery.addEventListener("change", function() {
+    checkedBreakpoint(swiperEventsMediaQuery);
+  });
+
+//var init = false;
+// var swiper;
+// function swiperCard() {
+//   if (window.innerWidth <= 768) {
+//     if (!init) {
+//       init = true;
+//       swiper = new Swiper(".slider-cards-js", {
+//         direction: "horizontal",
+//         slidesPerView: "auto",
+//         centeredSlides: true,
+//         spaceBetween: 32,
+//         pagination: {
+//           el: ".swiper-pagination",
+//           clickable: true,
+//         },
+//       });
+//     }
+//   } else if (init) {
+//     swiper.destroy();
+//     init = false;
+//   }
+// }
+// swiperCard();
+// window.addEventListener("resize", swiperCard);
 
 
 

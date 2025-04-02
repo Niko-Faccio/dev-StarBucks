@@ -70,15 +70,9 @@
 }
 
 
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    }
 
-    .event {
+
+.event-item {
         height: 260px;
         display: flex;
         flex-direction: column;
@@ -96,32 +90,53 @@
         }
     }
     
-    .event-1 { 
+.event-area-1 { 
         grid-area: 1 / 1 / 4 / 7; 
         
     }
 
-    .event-2 { 
+.event-area-2 { 
         grid-area: 1 / 7 / 4 / 13; 
     }
 
-    .event-3 { 
+.event-area-3 { 
         grid-area: 4 / 1 / 7 / 5; 
         .event-title {
             max-width: 245px;
         }
     }
 
-    .event-4 { 
+.event-area-4 { 
         grid-area: 4 / 5 / 7 / 9; 
     }
 
-    .event-5 { 
+.event-area-5 { 
         grid-area: 4 / 9 / 7 / 13; 
         .event-title {
             max-width: 300px;
         }
     }
+
+.carousel-wrapper {
+        position: relative;
+        .swiper-events {
+            max-width: 1252px;
+            margin: 0 auto;
+        }
+    }
+
+.swiper-events {
+
+        .swiper-events-button-prev {
+            @extend .swiper-button-prev;
+            cursor: pointer;
+        }
+    
+        .swiper-events-button-next {
+            @extend .swiper-button-next;
+            cursor: pointer;
+        }  
+      }
        
 .events-line {
     position: absolute;
@@ -130,3 +145,6 @@
     width: 700px;
     z-index: -1;
     }
+
+
+
