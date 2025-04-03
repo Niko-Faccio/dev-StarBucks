@@ -48,3 +48,10 @@ $section-mobile-mb: 64px;
     -moz-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
     mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
 }
+
+@mixin clip-left-top {
+    -webkit-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
+    -o-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
+    -moz-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
+    mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
+}
