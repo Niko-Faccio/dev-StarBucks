@@ -2,10 +2,9 @@
     .container {
         position: relative;
         display: flex;
-        position: relative;
         gap: 0 24px;
         justify-content: space-between;
-        margin-bottom: 100px;
+        //margin-bottom: 100px;
     }
 
     &__img-box {
@@ -94,14 +93,6 @@
         }
     }
 
-        
-    .decoration__contacts-line {
-        position: absolute;
-        top: 68px;
-        right: -170px;
-        width: 1000px;
-        z-index: -2;
-    }
 }
 
 
@@ -130,4 +121,18 @@
             height: 50px;
         }
     }
+}
+
+
+        
+.decoration__contacts-line {
+    position: absolute;
+    top: 68px;
+    right: -170px;
+    width: 1000px;
+    z-index: -2;
+}
+
+.decoration__contacts-line-mobile {
+    display: none;
 }

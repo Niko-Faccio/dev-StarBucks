@@ -34,7 +34,7 @@ $section-mobile-mb: 64px;
     background: center/contain no-repeat;
 }
 
-
+//img & mask in "We Make" desktop
 @mixin clip-right-top {
     -webkit-mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
     -o-mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
@@ -42,16 +42,44 @@ $section-mobile-mb: 64px;
     mask: url(./assets/img/we-make__clip-right-top.svg) no-repeat;
 }
 
-@mixin clip-right-bottom {
-    -webkit-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
-    -o-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
-    -moz-mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
-    mask: url(./assets/img/we-make__clip-right-bottom.svg) no-repeat;
+//img & mask in "We Make" mobile
+@mixin clip-right-top-mobile {
+    -webkit-mask: url(./assets/img/we-make__clip-right-top-mobile.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make__clip-right-top-mobile.svg) no-repeat;
+    -moz-mask: url(./assets/img/we-make__clip-right-top-mobile.svg) no-repeat;
+    mask: url(./assets/img/we-make__clip-right-top-mobile.svg) no-repeat;
 }
 
+//cooking & mask in "We Make" desktop
+@mixin clip-cooking-right-bottom {
+    -webkit-mask: url(./assets/img/we-make__clip-cooking-right-bottom.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make__clip-cooking-right-bottom.svg) no-repeat;
+    -moz-mask: url(./assets/img/we-make__clip-cooking-right-bottom.svg) no-repeat;
+    mask: url(./assets/img/we-make__clip-cooking-right-bottom.svg) no-repeat;
+}
+
+//cooking & mask in "We Make" mobile
+@mixin clip-cooking-right-top-mobile {
+    -webkit-mask: url(./assets/img/we-make__clip-cooking-right-top-mobile.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make__clip-cooking-right-top-mobile.svg) no-repeat;
+    -moz-mask: url(./assets/img/we-make__clip-cooking-right-top-mobile.svg) no-repeat;
+    mask: url(./assets/img/we-make__clip-cooking-right-top-mobile.svg) no-repeat;
+}
+
+
+
+//img & mask in "Contacts" desktop
 @mixin clip-left-top {
     -webkit-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
     -o-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
     -moz-mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
     mask: url(./assets/img/contacts___clip-left-top.svg) no-repeat;
+}
+
+//img & mask in "Contacts" mobile
+@mixin clip-left-top-mobile {
+    -webkit-mask: url(./assets/img/contacts___clip-left-top-mobile.svg) no-repeat;
+    -o-mask: url(./assets/img/contacts___clip-left-top-mobile.svg) no-repeat;
+    -moz-mask: url(./assets/img/contacts___clip-left-top-mobile.svg) no-repeat;
+    mask: url(./assets/img/contacts___clip-left-top-mobile.svg) no-repeat;
 }

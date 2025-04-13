@@ -83,29 +83,76 @@
 
         .container {
             flex-direction: column;
-            margin-bottom: 64px;
+            margin-bottom: 0;
+        }
+
+        &__img-box-bg {
+            display: flex;
+            justify-content: left;
         }
 
         &__img-box {
             max-width: 164px;
-            margin-left: 30%;
             margin-bottom: 60px;
 
+            img {
+                @include clip-right-top-mobile;
+            }
+
             &::before {
+                @include clip-right-top-mobile;
                 top: 12px;
                 right: 15px;
             }
         }
+
+        .we-make__process {
+            min-height: auto;
+
+            img {
+                max-width: 255px;
+                filter: none;
+                box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+                transform: scaleY(-1);
+            }
+        
+            &::before {
+                content: "";
+                position: absolute;
+                @include clip-cooking-right-top-mobile;
+                z-index: -1;
+                background-color: $primary-color;
+            }
+        
+            .btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                width: 193px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
         .we-make__line {
-            right: -70%;
-            width: 208%;
-            bottom: 40%;
+            display: none;
+        }
+
+        .we-make__line-mobile {
+            position: absolute;
+            display: block;
+            top: -6%;
+            left: -14%;
+            width: 519px;
             z-index: -2;
         }
 
         .accent-label-sm {
-            top: 30%;
-            left: 150%;
+            top: 27%;
+            left: 125%;
             width: 78px;
             height: 78px;
             font-size: 18px;
@@ -130,7 +177,7 @@
     
     .template-description {
             font-size: 12px;
-            margin-bottom: 38px;
+            margin-bottom: 28px;
         }
 
     .banner {
@@ -343,6 +390,93 @@
         padding: 0 6px;
         border-radius: 2px;
     }
+
+    .contacts {
+        .container {
+            flex-direction: column-reverse;
+            margin-bottom: 64px;
+        }
+
+        .contacts__img-box-bg {
+            display: flex;
+            justify-content: right;
+            margin-right: 20px;
+        }
+
+        &__img-box {
+            max-width: 164px;
+            margin-left: 30%;
+            margin-bottom: 60px;
+
+            img {
+                @include clip-left-top-mobile;
+            }
+
+            &::before {
+                @include clip-left-top-mobile;
+                top: 12px;
+                left: 15px;
+            }
+        }
+
+        .accent-label-sm {
+            top: 106px;
+            left: -100px;
+            width: 78px;
+            height: 78px;
+            font-size: 18px;
+            font-weight: 500;
+                .accent-label-image {
+                width: 78px;
+                height: 78px;
+                }
+        } 
+        
+        .decoration__contacts-line {
+            display: none;
+        }
+
+        .decoration__contacts-line-mobile {
+            display: block;
+            position: absolute;
+            width: 509px;
+            top: -4%;
+            right: -9%;
+            z-index: -2;
+        }
+
+        .contacts-grid {
+            grid-template-columns: 38px 206px;
+            gap: 20px 10px;
+            font-size: 22px;
+        
+            div {
+                text-align: left;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            .contacts-social-icon {
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+
+            .contacts-phones-icon {
+                img {
+                    display: flex;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+
 
     .footer {
         padding: 37px 0 7px;

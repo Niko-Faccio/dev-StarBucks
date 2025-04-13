@@ -106,8 +106,16 @@
     img {
         max-height: 275px;
         filter: blur(2px);
-        box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39); //not work!!!
-        @include clip-right-bottom;
+        box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+        @include clip-cooking-right-bottom;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        @include clip-cooking-right-bottom;
+        z-index: -1;
+        background-color: $primary-color;
     }
 
     .btn {
@@ -128,4 +136,9 @@
     bottom: -70%;
     width: 1238px; 
     z-index: -1; 
+}
+
+.we-make__line-mobile {
+    position: absolute;
+    display: none;
 }
