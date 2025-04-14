@@ -39,8 +39,62 @@
     </div>
    <div class="modal-body">
         <div class="modal-content">
-            <p>Here you could contact us.</p> 
-            <p>We are very sorry, we are working on it now. Contact us a little later. Have a nice day.</p>
+            <form action="" autocomplete="off">
+  
+                <fieldset>
+                  <legend></legend>
+                  <div class="input-row">
+                    <div class="input-box">
+                      <label for="fname">Your Name:</label>
+                      <input id="fname" placeholder="Vincenco Napoli" type="text">
+                    </div>
+                  </div>
+                  <div class="input-box">
+                    <label for="phone">Tel.:</label>
+                    <input type="tel" name="" id="phone" placeholder="+421 000 000 000">
+                  </div>
+                  <div class="input-box">
+                    <label for="email">E-mail::</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                  </div>
+              
+                    <div class="control-list">
+                      <div class="gender">
+                        <p class="control-list__title">Gender:</p>
+                        <div class="control-box__item">
+                          <input type="radio" id="male" name="gender">
+                          <label for="male">male</label>
+                        </div>
+                        <div class="control-box__item">
+                          <input type="radio" id="female" name="gender">
+                          <label for="female">female</label>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="country-live">
+                      <label for="country">Country:</label>
+                      <input id="country" placeholder="Italy" type="text">
+                    </div>
+                </fieldset>
+                
+                <div class="text">
+                    <label for="message">Text:</label>
+                    <textarea name="message" rows="10" cols="30" placeholder="Your message..."></textarea>
+                </div>
+              
+                
+              </form>
+        </div>
+   </div>
+   <div class="modal-footer">
+        <div class="btn-modal-nav">
+            <div class="modal-footer__btn-nav">
+                
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                
+            </div>
         </div>
    </div>
 </div>
