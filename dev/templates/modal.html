@@ -33,56 +33,59 @@
     </div>
 </div>
 
-<div id="feedback" class="modal">
+<div id="feedback" class="modal feedback-field">
     <div class="modal-header">
         <span class="close" data-modal-close>&times;</span>
     </div>
    <div class="modal-body">
         <div class="modal-content">
             <form action="" autocomplete="off">
-  
-                <fieldset>
-                  <legend></legend>
+              <fieldset>
                   <div class="input-row">
-                    <div class="input-box">
-                      <label for="fname">Your Name:</label>
-                      <input id="fname" placeholder="Vincenco Napoli" type="text">
+                    <div class="input-description">
+                      <label for="fname">Name:</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="fname" placeholder="&nbsp;Vincenco Napoli" type="text">
                     </div>
                   </div>
-                  <div class="input-box">
-                    <label for="phone">Tel.:</label>
-                    <input type="tel" name="" id="phone" placeholder="+421 000 000 000">
-                  </div>
-                  <div class="input-box">
-                    <label for="email">E-mail::</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
-                  </div>
-              
-                    <div class="control-list">
-                      <div class="gender">
-                        <p class="control-list__title">Gender:</p>
-                        <div class="control-box__item">
-                          <input type="radio" id="male" name="gender">
-                          <label for="male">male</label>
-                        </div>
-                        <div class="control-box__item">
-                          <input type="radio" id="female" name="gender">
-                          <label for="female">female</label>
-                        </div>
-                      </div>
+
+                  <div class="input-row">
+                    <div class="input-description">
+                      <label for="phone">Tel.:</label>
                     </div>
-              
-                    <div class="country-live">
+                    <div class="input-field">
+                      <input type="tel" name="" id="phone" placeholder="&nbsp;+421 000 000 000">
+                    </div>
+                  </div>
+
+                  <div class="input-row">
+                    <div class="input-description">
+                      <label for="email">E-mail:</label>
+                    </div>
+                    <div class="input-field">
+                      <input type="email" name="email" id="email" placeholder="&nbsp;example@gmail.com">
+                    </div>
+                  </div>
+
+                  <div class="input-row">
+                    <div class="input-description">
                       <label for="country">Country:</label>
-                      <input id="country" placeholder="Italy" type="text">
                     </div>
-                </fieldset>
-                
-                <div class="text">
-                    <label for="message">Text:</label>
-                    <textarea name="message" rows="10" cols="30" placeholder="Your message..."></textarea>
-                </div>
+                    <div class="input-field">
+                      <input id="country" placeholder="&nbsp;Italy" type="text">
+                    </div>
+                  </div>
               
+                  <div class="input-row">
+                    <div class="input-description">
+                      <label for="message">Text:</label>
+                    </div>
+                    <div class="input-field">
+                      <textarea name="message" rows="5" cols="24" placeholder="Your message..."></textarea>
+                    </div>
+                  </div>
+              </fieldset>
                 
               </form>
         </div>

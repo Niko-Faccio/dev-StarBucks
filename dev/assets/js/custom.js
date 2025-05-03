@@ -169,7 +169,9 @@ const swiperProduct = new Swiper('.swiper-product', {
           return;
        
     } else {
-        swiperEvents.destroy();
+        if (swiperEvents) {
+            swiperEvents.destroy();
+        }
     }
   }
 

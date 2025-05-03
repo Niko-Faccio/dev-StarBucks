@@ -80,7 +80,7 @@
  
     .btn.btn-secondary {
         font-size: 16px;
-        padding: 17px 36px;
+        padding: 17px 35px;
     }
 
     .we-make {
@@ -306,18 +306,43 @@
         }
     }
     
-    .modal {
-        &.show {
-            max-width: 360px;
-            line-height: initial;
-            border: 1px solid;
+
+    .feedback-field {
+        .modal-body {
+            .input-description {
+                font-size: 18px;
+            }
+    
+            input {
+                font-size: 18px;
+                margin-bottom: 6px;
+            }
+    
+            textarea {
+                font-size: 18px;
+                padding: 6px;
+            }
+            
+            
+            &.show {
+                max-width: 360px;
+                line-height: initial;
+                border: 1px solid;
+            }
+            .modal-content {
+                padding: 6px;
+                font-size: 12px;
+                line-height: inherit;
+            }
         }
-        .modal-content {
-            padding: 6px;
-            font-size: 12px;
-            line-height: inherit;
+
+        .modal-footer__btn-nav {
+            .btn {
+                padding: 10px 22px;
+            }
         }
     }
+    
 
     .carousel-wrapper {
         .swiper-product {
@@ -408,6 +433,10 @@
             font-size: 13px;
             font-weight: 800;
             padding: 14px 30px;
+        }
+
+        .event-item {
+            max-width: 400px;
         }
     }
 
