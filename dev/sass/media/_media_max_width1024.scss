@@ -309,7 +309,7 @@
 
     .feedback-field {
         .modal-body {
-            .input-description {
+            .input-row {
                 font-size: 18px;
             }
     
@@ -438,12 +438,77 @@
         .event-item {
             max-width: 400px;
         }
+
+        .template-description::before {
+            display: none;
+        }
+
+        .template-title::after {
+            left: -194px;
+            top: 266px;
+        }
+
+        .template-title {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 248px;
+                top: 260px;
+                width: 275px;
+                height: 220px;
+                background: url(./assets/img/decoration__events-accent.png) center no-repeat;
+                z-index: -1;
+            }
+        }
+
+        .template-description::after {
+            display: none;
+        }
+
+        .events-decoration-accent::after {
+           display: none;
+        }
+
+        .events-decoration-accent::before {
+            display: none;
+        }
     }
 
     .contacts {
         .container {
             flex-direction: column-reverse;
             margin-bottom: 64px;
+            align-items: center;
+        }
+
+        .contacts__content-box::before {
+            display: none;
+        }
+
+        .contacts__content-box::after {
+            display: none;
+        }
+
+        .contacts__img-box-light::before {
+            content: "";
+            position: absolute;
+            right: -92%;
+            top: -62%;
+            width: 310px;
+            height: 277px;
+            background: url(./assets/img/decoration__advantages-accent-sm.png) center no-repeat;
+            z-index: -1;
+        }
+
+        .contacts__img-box::after {
+            content: "";
+            position: absolute;
+            right: 62%;
+            top: 150%;
+            width: 215px;
+            height: 200px;
+            background: url(./assets/img/decoration__contacts-light-mobile.png) center no-repeat;
+            z-index: -1;
         }
 
         .contacts__img-box-bg {
@@ -469,7 +534,7 @@
         }
 
         .accent-label-sm {
-            top: 106px;
+            top: 50px;
             left: -100px;
             width: 78px;
             height: 78px;
@@ -488,9 +553,9 @@
         .decoration__contacts-line-mobile {
             display: block;
             position: absolute;
-            width: 509px;
-            top: -4%;
-            right: -9%;
+            width: 452px;
+            top: -12%;
+            right: 30%;
             z-index: -2;
         }
 
